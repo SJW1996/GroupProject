@@ -22,7 +22,7 @@ $upper = <<<EOBODY
     <input type="email" name="email" required><br><br>
     <strong>Phone Number: </strong>
     <input type="text" name="phone_validation" pattern="\([0-9]{3}\)[0-9]{3}[\-][0-9]{4}$" required
-                   title="Please enter in form: (123)456-7890" class="form-control" placeholder="(123)456-7890"><br><br>
+                   title="Please enter in form: (123)456-7890" placeholder="(123)456-7890"><br><br>
     <strong>Gender: </strong>
     <select name="gender" size="1" required>
         <option value="none">Prefer Not Answer</option>
@@ -57,7 +57,7 @@ if (isset($_POST['submit'])) {
             $upper = "<h1>Thank you for register, please go back to main page and login</h1>";
             $upper .= "<a href='index.html'><button>Return to main menu</button></a>";
         } else {
-            $bot = "<br>Inserting records failed." . mysqli_error($db) . "<br><br>";
+            $bot = "<br>Register failed: " . mysqli_error($db) . "<br><br>";
         }
     }
 }

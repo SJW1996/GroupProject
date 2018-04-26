@@ -46,7 +46,7 @@ if (isset($_POST['submit'])) {
     if ($_POST['pwd'] !== $_POST['verifyPwd']) {
         $bot = "<strong>Password does not match</strong>";
     } else {
-        $table = "applicants";
+        $table = "users";
         $hashed = password_hash(trim($_POST["pwd"]), PASSWORD_DEFAULT);
         $db = connectToDB();
 

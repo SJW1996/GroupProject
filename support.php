@@ -13,7 +13,6 @@ function connectToDB() {
     }
     return $db;
 }
-
 function generatePage($body, $title="Grades Submission System") {
     $page = <<<EOPAGE
 <!doctype html>

@@ -26,6 +26,7 @@ if (isset($_POST["submitInfoButton"])) {
 if ($result) {
     if (mysqli_num_rows($result) == 0) {
         $bottomPart .= "<h2>Please Register</h2>";
+    	$bottomPart .="<a href=\"register.php\"><button>Register</button></a>";
         $bottomPart .="<a href=\"index.html\"><button>Return to main menu</button></a>";
     }
     else{
@@ -35,12 +36,14 @@ if ($result) {
 		}
 		else {
 			session_start();
-			$_SESSION['attempts'] = 0;
+			$_SESSION['user'] = $user;
+
 			header("location:edit.php");
 		}
 	}
 }else{
     $bottomPart .= "<h2>Please Register</h2>";
+    $bottomPart .="<a href=\"register.php\"><button>Register</button></a>";
     $bottomPart .="<a href=\"index.html\"><button>Return to main menu</button></a>";
 }
 

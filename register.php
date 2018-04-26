@@ -55,7 +55,7 @@ if (isset($_POST['submit'])) {
         $result = mysqli_query($db, $sqlQuery);
         if ($result) {
             $upper = "<h1>Thank you for register, please go back to main page and login</h1>";
-            $upper .= "<a href='main.html'><button>Return to main menu</button></a>";
+            $upper .= "<a href='index.html'><button>Return to main menu</button></a>";
         } else {
             $bot = "<br>Inserting records failed." . mysqli_error($db) . "<br><br>";
         }

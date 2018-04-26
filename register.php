@@ -25,9 +25,9 @@ $upper = <<<EOBODY
     title="Please enter in form: (123)456-7890" placeholder="(123)456-7890"><br><br>
     <strong>Gender: </strong>
     <select name="gender" size="1" required>
-        <option value="none">Prefer Not Answer</option>
-        <option value="Male">Male</option>
-        <option value="Female">Female</option>
+        <option value="N">Prefer Not Answer</option>
+        <option value="M">Male</option>
+        <option value="F">Female</option>
     </select><br><br>
     <strong>Password: </strong>
     <input type="password" name="pwd" id="pwd" onkeyup="check()" required><br><br>

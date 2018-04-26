@@ -13,7 +13,7 @@ $upper = <<<EOBODY
             }
         }
     </script>
-<div id = cent>
+<div>
 <form method="post" action="{$_SERVER['PHP_SELF']}">
     <h1>Register New Account</h1>
     <strong>Name: </strong>

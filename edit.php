@@ -1,5 +1,5 @@
 <?php
-require_once "support.php";
+require "support.php";
 
 session_start();
 

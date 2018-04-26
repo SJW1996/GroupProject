@@ -21,12 +21,8 @@ $upper = <<<EOBODY
     <strong>Email: </strong>
     <input type="email" name="email" required><br><br>
     <strong>Phone Number: </strong>
-    <input type="text" name="phone_validation" pattern="\([0-9]{3}\)[0-9]{3}[\-][0-9]{4}$" required
-<<<<<<< HEAD
-                   title="Please enter in form: (123)456-7890" placeholder="(123)456-7890"><br><br>
-=======
-                   title="Please enter in form: (123)456-7890"placeholder="(123)456-7890"><br><br>
->>>>>>> b73a9a63efeaeeb7ee2ac9b9069ce7f19dec48d6
+    <input type="text" name="phone_validation" pattern="\([0-9]{3}\)[0-9]{3}[\-][0-9]{4}$" required 
+    title="Please enter in form: (123)456-7890" placeholder="(123)456-7890"><br><br>
     <strong>Gender: </strong>
     <select name="gender" size="1" required>
         <option value="none">Prefer Not Answer</option>

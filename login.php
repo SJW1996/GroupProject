@@ -5,8 +5,8 @@ $topPart = <<<EOBODY
 <div>
 <form action="{$_SERVER['PHP_SELF']}" method="post" class = "form-horizontal">
 <h1>Log into Our System</h1>
-<strong>Username: </strong>
-<input type="text" name="name" class="form-control" required/></br></br>
+<strong>Email: </strong>
+<input type="text" name="email" class="form-control" required/></br></br>
 <strong>Password: </strong>
 <input type="password" name="password"  class="form-control" required/></br></br>
 
@@ -18,10 +18,10 @@ EOBODY;
 $bottomPart = "";
 
 if (isset($_POST["submitInfoButton"])) {
-		$login = trim($_POST["name"]);
+		$login = trim($_POST["email"]);
 		$password = trim($_POST["password"]);
 		$db = connectToDB();
-        $sqlQuery = sprintf("select password from users where email='%s'", $email);
+        $sqlQuery = sprintf("select password from users where email='%s'", $login);
         $result = mysqli_query($db,$sqlQuery);
 if ($result) {
     if (mysqli_num_rows($result) == 0) {

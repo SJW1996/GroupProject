@@ -2,7 +2,7 @@
 require("support.php");
 
 $topPart = <<<EOBODY
-<div id = cent>
+<div>
 <form action="{$_SERVER['PHP_SELF']}" method="post" class = "form-horizontal">
 <h1>Log into Our System</h1>
 <strong>Username: </strong>

@@ -26,7 +26,7 @@ function generatePage($body, $title="Grades Submission System") {
 <!--        <link rel = "stylesheet" href = "style.css"> -->
     </head>
             
-    <body>
+    <body id = "cent">
         <div class="container-fluid">
             $body
         </div>

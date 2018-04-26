@@ -21,9 +21,8 @@ function generatePage($body, $title="Grades Submission System") {
     <head> 
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <title>$title</title>	
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" 
-        integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-<!--        <link rel = "stylesheet" href = "style.css"> -->
+            <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+            <link rel = "stylesheet" href = "style.css">
     </head>
             
     <body id = "cent">
